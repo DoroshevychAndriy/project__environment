@@ -1,0 +1,66 @@
+.component{
+    &__donate{
+        background: url('../../../img/icon/donateBg.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position-y: bottom;
+    }
+}
+.component__donate{
+    @include adaptive-value('margin-right', 110, 20, 1);
+    @include adaptive-value('margin-left', 110, 20, 1);
+    @include adaptive-value('padding-top', 92, 70, 1);
+    @include adaptive-value('padding-bottom', 92, 70, 1);
+    @include adaptive-value('margin-top', 96, 62, 1);
+    @include adaptive-value('margin-bottom', 96, 62, 1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.donate{
+    &__btn{
+        border-radius: 4px;
+        font-weight: 500;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @include adaptive-value('font-size', 16, 12, 1);
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 32px;
+    }
+    &__title{
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        width: 620px;
+        font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
+        @include adaptive-value('width', 620, 250, 1);
+    }
+}
+
+div.donate__btn#donate-btn-2{
+    color: #1D2130;
+    background: #FFFFFF;
+    @include adaptive-value('margin-left', 32, 19, 1);
+    @include adaptive-value('width', 116, 80, 1);
+    @include adaptive-value('height', 51, 35, 1);
+    &:hover{
+        color: #FFFFFF;
+        background: #a1a3a2;
+    }
+}
+div.donate__btn#donate-btn-1{
+    background: #70C174;
+    color: #FFFFFF;
+    @include adaptive-value('width', 200, 126, 1);
+    @include adaptive-value('height', 51, 35, 1);
+    &:hover{
+        color: #7a7a7a;
+        background: #BEF3C0;
+    }
+}

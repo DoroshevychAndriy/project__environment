@@ -1,0 +1,121 @@
+.footer{
+    &__container{
+        background: #0B0706;
+        &.padd{
+            @include adaptive-value('padding-top', 96, 40, 1);
+            @include adaptive-value('padding-bottom', 96, 40, 1);
+        }
+    }
+    &__nav{
+        display: flex;
+        @media screen and (max-width: 972px){
+            flex-direction: column;
+        }
+        &__block{
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 768px){
+                flex-direction: column;
+            }
+        }
+        &__logo{
+            background: url(../../img/logo/LogoFooter.png) no-repeat center/cover;
+            width: 112px;
+            height: 24px;
+            @include adaptive-value('margin-right', 120, 0, 1);
+            @media screen and (max-width: 972px){
+                margin-bottom: 35px;
+            }
+        }
+        &bar{
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 972px){
+                justify-content: center;
+            }
+        }
+    }
+    &__navbar{
+        @include adaptive-value('margin-right', 100, 0, 1);
+        @media screen and (max-width: 768px){
+            margin-right: 0;
+            margin-bottom: 70px;
+            justify-content: space-between;
+        }
+        &__item{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: #FFFFFF;
+            opacity: 0.78;
+        }
+        & ul:not(:last-child){
+            @include adaptive-value('margin-right', 80, 0, 1);
+            @media screen and (max-width: 1275px){
+                margin-right: 17px;
+            }
+            @media screen and (max-width: 972px){
+                @include adaptive-value('margin-right', 48, 0, 1);
+            }
+        }
+        & ul li{
+            padding: 7px;
+            &:not(:last-child){
+                margin-bottom: 24px;
+            }
+            &:hover{
+                background: #525560;
+            }
+            & a.active{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 160%;
+                color: #FFFFFF;
+            }
+            
+        }
+    }
+}
+
+.subscribe{
+    &__btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1D2130;
+        background: #FFFFFF;
+        border-radius: 4px;
+        padding: 0;
+        @include adaptive-value('width', 136, 111, 1);
+        @include adaptive-value('height', 64, 35, 1);
+    }
+    &__input form input{
+        border: 1px solid rgba(235, 240, 249, 0.3);
+        border-radius: 4px;
+        &#input1{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(235, 240, 249, 0.3);
+            opacity: 0.8;
+            background: #0B0706;
+            @include adaptive-value('margin-right', 5, 3, 1);
+            @include adaptive-value('margin-bottom', 10, 0, 1);
+            @include adaptive-value('width', 406, 150, 1);
+            @include adaptive-value('padding-top', 22, 8, 1);
+            @include adaptive-value('padding-bottom', 22, 8, 1);
+            @include adaptive-value('padding-left', 22, 8, 1);
+            @media screen and (max-width: 972px){
+                @include adaptive-value('margin-right', 12, 10, 1);
+            }
+        }
+    }
+
+}
+
+.input__title.news__title__text{
+    @include adaptive-value('width', 440, 300, 1);
+    @include adaptive-value('margin-bottom', 32, 15, 1);
+    color: #FFFFFF;
+    margin-right: 0;
+}

@@ -1,0 +1,73 @@
+
+
+
+.component__main{
+    background: url('../../../img/icon/BG-Image.png') no-repeat;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 96px;
+    @include adaptive-value('padding-top', 128, 100, 1);
+    @include adaptive-value('padding-bottom', 128, 80, 1);
+    @include adaptive-value('padding-left', 63, 10, 1);
+    @include adaptive-value('padding-right', 63, 10, 1);
+    & .main__block{
+            display: flex;
+            flex-direction: column;
+            
+            & .main__title{
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 120%;
+                color: #FFFFFF;
+                @include adaptive-value('width', 640, 272, 1);
+                @include adaptive-value('font-size', 64, 27, 1);
+                margin-bottom: 48px;
+            }
+
+            & .main__subtitle{
+                display: flex;
+                & .main__btn{
+                    margin-right: 40px;
+                    @include adaptive-value('margin-right', 40, 22, 1);
+                }
+
+                & .main__video{
+                    display: flex;
+                    align-items: center;
+                    & .main__video__icon{
+                        background: url('../../../img/icon/Play-icon.png') no-repeat;
+                        width: 24px;
+                        height: 25px;
+                        margin-right: 8px;
+                    }
+                    & .main__video__text{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+    }
+}
+
+.main__bottom{
+    @include adaptive-value('margin-top', 193, 148, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .main__bottom__text{
+        font-weight: 500;
+        @include adaptive-value('font-size', 18, 13, 1);
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    & .main__bottom__line{
+        border: 1px solid #E5E5E5;
+        @include adaptive-value('margin-left', 24, 5, 1);
+        @include adaptive-value('margin-right', 24, 5, 1);
+        @include adaptive-value('width', 861, 15, 1);
+        width: 861px;
+    }
+}

@@ -1,0 +1,76 @@
+.component__whatwedo{
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #EFF7F2;
+}
+.section__content__whatwedo{
+    @include adaptive-value('margin-right', 65, 0, 0);
+}
+.component{
+    &__about{}
+    &__whatwedo{
+        margin-bottom: 0;
+    }
+}
+.item{
+    &__icon{
+        width: 28px;
+           height: 28px;
+        @include adaptive-value('margin-right', 24, 5, 1);
+       & img{
+        margin-top: 7px;
+       }
+    }
+    &__subtitle{
+        font-weight: 400;
+        @include adaptive-value('font-size', 16, 14, 1);
+        line-height: 160%;
+        color: #525560;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin-bottom: 8px;
+        font-weight: 700;
+        @include adaptive-value('font-size', 24, 19, 1);
+        line-height: 28px;
+        color: #1D2130;
+    }
+}
+.padd{}
+.section__container.whatwedo{
+    flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+    @media screen and (max-width: 972px){
+        flex-direction: column;
+    }
+}
+.part{
+    &__text{}
+}
+.whatwedo{
+    &__img{
+        background: url('../../../img/icon/WhatWeDo.png') no-repeat center /cover ;
+        width: 440px;
+        height: 658px;
+        margin-top: 32px;
+        @media screen and (max-width: 972px){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width: 870px){
+            height: 350px;
+        }
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

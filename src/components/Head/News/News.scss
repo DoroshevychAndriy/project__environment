@@ -1,0 +1,191 @@
+.component{
+    &__news{
+        @include adaptive-value('margin-right', 110, 20, 1);
+        @include adaptive-value('margin-left', 110, 20, 1);
+        @include adaptive-value('margin-bottom', 96, 62, 1);
+    }
+}
+
+.news{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        @include adaptive-value('margin-top', 48, 25, 1);
+        @include adaptive-value('margin-BOTTOM', 96, 60, 1);
+        @media screen and (max-width: 972px){
+            flex-wrap: wrap;
+        }
+    }
+    &__item{
+        @media screen and (max-width: 972px){
+            width: 48%;
+        }
+        @media screen and (max-width: 600px){
+            width: 100%;
+        }
+        &:not(:last-child){
+            @media screen and (max-width: 972px){
+                @include adaptive-value('margin-bottom', 20, 40, 1);
+            }
+            &{
+                margin-right: 10px;
+                @media screen and (max-width: 600px){
+                    margin-right: 0;
+                }
+            }
+        }
+        &__img{
+            height: 192px;
+            border-radius: 8px;
+            background-position: center;
+        }
+        &__title{
+            font-weight: 500;
+            width: 90%;
+            margin: 16px 0 8px 0;
+            line-height: 150%;
+            color: #1C1D28;
+            @include adaptive-value('font-size', 20, 16, 1);
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+        &__subtitle{
+            font-weight: 400;
+            line-height: 160%;
+            color: #525560;
+            width: 95%;
+            @include adaptive-value('font-size', 16, 14, 1);
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__hr{
+            height: 0;
+            display: flex;
+            border: 1px solid #E5E5E5;
+            transform: rotate(180deg);
+            width: 72%;
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 140%;
+            color: #1D2130;
+            margin-right: 5px;
+            width: 30%;
+            @include adaptive-value('font-size', 40, 16, 1);
+        }
+    }
+}
+
+div#newItem1{background: url('../../../img/icon/newsImg1.png') no-repeat center /cover}
+div#newItem2{background: url('../../../img/icon/newsImg2.png') no-repeat center /cover}
+div#newItem3{background: url('../../../img/icon/newsImg3.png') no-repeat center /cover}
+div#newItem4{background: url('../../../img/icon/newsImg4.png') no-repeat center /cover}
+
+
+
+//-------EVENTS----------
+
+.news{
+    &__events{
+        display: flex;
+        margin-top: 48px;
+        justify-content: space-between;
+        @media screen and (max-width: 972px){
+            flex-direction: column;
+        }
+        & .event{
+            background: #BEF3C0;
+            border-radius: 8px;
+            display: flex;
+            @include adaptive-value('padding-top', 40, 15, 0);
+            @include adaptive-value('padding-bottom', 40, 15, 0);
+            @include adaptive-value('padding-left', 48, 15, 0);
+            @include adaptive-value('padding-right', 48, 20, 0);
+            width: 49%;
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+            &:not(:last-child){
+                
+                @media screen and (max-width: 972px){
+                    margin-bottom: 20px;
+                }
+            }
+            &__title{
+                width: 100%;
+            }
+            &__time{
+                & .day{
+                    font-weight: 700;
+                    line-height: 150%;
+                    color: #1D2130;
+                    @include adaptive-value('font-size', 28, 18, 0);
+                }
+                & .month{
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #1D2130;
+                    @include adaptive-value('font-size', 16, 13, 0);
+                }
+            }
+            &__title__content{
+                display: flex;
+                justify-content: space-between;
+                & .event__title-text{
+                    font-weight: 700;
+                    line-height: 150%;
+                    color: #1D2130;
+                    width: 83%;
+                    @include adaptive-value('font-size', 28, 14, 0);
+                    @media screen and (max-width: 768px){
+                        font-weight: 500;
+                    }
+                }
+                & .event__title-arrow{
+                    background: url('../../../img/icon/Arrow\ button.png') no-repeat center /contain;
+                    @include adaptive-value('width', 56, 25, 0);
+                    @include adaptive-value('height', 56, 25, 0);
+                }
+            }
+            & .event__time{
+                display: flex;
+                flex-direction: column;
+                @include adaptive-value('margin-right', 24, 14, 0);
+            }
+            &__title__part{
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                &-hr{
+                    width: 44px;
+                    height: 0px;
+                    margin-left: 23px;
+                    border: 2px solid #1D2130;
+                    @media screen and (max-width: 972px){
+                        border: 1px solid #858585;
+                    }
+                }
+                &-text{
+                    font-weight: 500;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    color: #1D2130;
+                    @include adaptive-value('font-size', 16, 14, 0);
+                    @media screen and (max-width: 768px){
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
