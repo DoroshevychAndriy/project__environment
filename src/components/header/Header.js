@@ -15,6 +15,7 @@ export class Header extends Component {
         document.querySelector('body').classList.remove('active')
     }
     
+    
     render() {
         return (
             <div className='component__header'>
@@ -27,19 +28,19 @@ export class Header extends Component {
                         <ul>
                             <li className='burger'><p onClick={this.hideMenu}>&#9932;</p></li>
                             <li>
-                                <NavLink to="/" setActive className='menu__link'>Home</NavLink>
+                                <NavLink to="project__environment" setActive className='menu__link'>Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/about" setActive className='menu__link'>About us</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/whatwedo" setActive className='menu__link'>What We Do</NavLink>
+                                <NavLink to="/project__environment/whatwedo" setActive className='menu__link'>What We Do</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/media" setActive className='menu__link'>Media</NavLink>
+                                <NavLink to="/project__environment/media" setActive className='menu__link'>Media</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" setActive className='menu__link'>Contact</NavLink>
+                                <NavLink to="/project__environment/contact" setActive className='menu__link'>Contact</NavLink>
                             </li>
                         </ul>
                     </div>
