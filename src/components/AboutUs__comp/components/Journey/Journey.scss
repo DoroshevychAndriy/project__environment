@@ -1,0 +1,75 @@
+.component{
+    &__journey{
+        @include adaptive-value('margin-bottom', 96, 50, 1);
+    }
+}
+.journey{
+    display: flex;
+    @include adaptive-value('width', 488, 300, 1);
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    @media screen and (max-width: 972px){
+        width: 100%;
+        align-items: center;
+        margin-bottom: 50px;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    &__content{
+        background: #0B0706;
+        border-radius: 12px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 0 64px 96px;
+        @include adaptive-value('padding-left', 64, 10, 1);
+        @include adaptive-value('padding-top', 64, 30, 1);
+        @include adaptive-value('padding-bottom', 96, 50, 1);
+        @media screen and (max-width: 972px){
+            flex-direction: column;
+            @include adaptive-value('padding-right', 65, 10, 1);
+        }
+    }
+    &__img{
+        background: url(../../../../img/icon/journey.png) no-repeat center/cover;
+        height: 448px;
+        border-radius: 12px 0px 0px 12px;
+        @include adaptive-value('width', 647.78, 300, 1);
+        @include adaptive-value('height', 448, 238, 1);
+        @media screen and (max-width: 972px){
+            width: 100%;
+        }
+    }
+    &__numbers{
+        display: flex;
+        & .number__text{
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child){
+                @include adaptive-value('margin-right', 32, 20, 1);
+            }
+            &__subamount{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 160%;
+                opacity: 0.6;
+            }
+        }
+    }
+    &__subtitle{
+        @include text-p;
+        color: #FFFFFF;
+        opacity: 0.6;
+        @include adaptive-value('margin-bottom', 32, 10, 1);
+    }
+    &__title{
+        &.awards__title{
+            color: #FFFFFF;
+            text-align: start;
+            @include adaptive-value('margin-top', 16, 0, 1);
+            @include adaptive-value('margin-bottom', 16, 0, 1);
+        }
+    }
+}

@@ -1,7 +1,7 @@
 .component__whatwedo{
-    padding-top: 96px;
-    padding-bottom: 96px;
     background: #EFF7F2;
+    @include adaptive-value('padding-bottom', 96, 30, 0);
+    @include adaptive-value('padding-top', 96, 80, 0);
 }
 .section__content__whatwedo{
     @include adaptive-value('margin-right', 65, 0, 0);

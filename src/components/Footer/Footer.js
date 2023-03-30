@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 export class Footer extends Component {
   render() {
@@ -12,25 +13,25 @@ export class Footer extends Component {
                         <div className="footer__nav__block">
                         <div className="footer__navbar">
                             <ul>
-                                <li><a href="#" className='active'>Our team</a></li>
-                                <li><a href="#" className='footer__navbar__item'>About us</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Team</a></li>
-                                <li><a href="#" className='footer__navbar__item'>What we do</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Contact</a></li>
+                                <li><Link to="#" className='active'>Our team</Link></li>
+                                <li><Link to="/about" className='footer__navbar__item'>About us</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Team</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>What we do</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Contact</Link></li>
                             </ul>
                             <ul>
-                                <li><a href="#" className='active'>More</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Projects</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Events</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Donate</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Blog</a></li>
+                                <li><Link to="#" className='active'>More</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Projects</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Events</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Donate</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Blog</Link></li>
                             </ul>
                             <ul>
-                                <li><a href="#" className='active'>Connect </a></li>
-                                <li><a href="#" className='footer__navbar__item'>Facebook</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Instagram</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Twitter</a></li>
-                                <li><a href="#" className='footer__navbar__item'>Linkdin</a></li>
+                                <li><Link to="#" className='active'>Connect </Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Facebook</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Instagram</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Twitter</Link></li>
+                                <li><Link to="#" className='footer__navbar__item'>Linkdin</Link></li>
                             </ul>
                         </div>
                         <div className="footer__nav__subscribe subscribe">

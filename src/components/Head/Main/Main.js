@@ -6,11 +6,11 @@ export class Main extends Component {
       <div className='component__main'>
         <div className="main__block">
             <div className="main__title">Save the environment today for a better tomorrow</div>
-            <div className="main__subtitle">
+            <div className="main__subtitle__text">
                 <div className="main__btn">
                     <button className='btn'>What we do</button>
                 </div>
-                <a href='#' className="main__video">
+                <a href='#' className="main__playvideo">
                     <div className="main__video__icon"></div>
                     <div className="main__video__text">Play Video</div>
                 </a>

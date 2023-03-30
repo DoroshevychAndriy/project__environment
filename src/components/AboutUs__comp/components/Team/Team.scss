@@ -1,0 +1,89 @@
+// @mixin middle-title
+// @mixin text-p
+
+.component{
+    
+    &__team{
+        text-align: center;
+        @include adaptive-value('margin-bottom', 96, 25, 1);
+        .team{
+            &__title{
+                @include middle-title;
+                @include adaptive-value('font-size', 48, 24, 1);
+            }
+            &__subtitle{
+                @include text-p;
+                opacity: 0.6;
+            }
+            &__content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                &__item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include adaptive-value('margin-bottom', 48, 25, 1);
+                    @include adaptive-value('margin-right', 28, 0, 1);
+                    @media screen and (max-width: 546px){
+                        &:nth-child(odd){
+                            margin-right: 10px;
+                        }
+                    }
+                    &-name{
+                        font-weight: 500;
+                        line-height: 160%;
+                        color: #1D2130;
+                        @include adaptive-value('font-size', 20, 13, 1);
+                        @include adaptive-value('margin-top', 16, 11, 1);
+                        @include adaptive-value('margin-bottom', 8, 0, 1);
+                    }
+                    &-occupation{
+                        @include text-p;
+                        opacity: 0.6;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                    &-img{
+                        width: 296px;
+                        height: 320px;
+                        border-radius: 8px;
+                        @include adaptive-value('width', 296, 140, 1);
+                        @include adaptive-value('height', 320, 140, 1);
+                        &#team1{background: url(./img/team1.png) no-repeat center/cover}
+                        &#team2{background: url(./img/team2.png) no-repeat center/cover}
+                        &#team3{background: url(./img/team3.png) no-repeat center/cover}
+                        &#team4{background: url(./img/team4.png) no-repeat center/cover}
+                        &#team5{background: url(./img/team5.png) no-repeat center/cover}
+                        &#team6{background: url(./img/team6.png) no-repeat center/cover}
+                        &#team7{background: url(./img/team7.png) no-repeat center/cover}
+                        &#team8{background: url(./img/team8.png) no-repeat center/cover}
+                    }
+                    &-social{
+                        @include adaptive-value('margin-top', 16, 8, 1);
+                        & ul{
+                            display: flex;
+                            & li{
+                                @include adaptive-value('height', 20, 15, 1);
+                                @include adaptive-value('width', 20, 15, 1);
+                                background-color: aqua;
+                                &:not(:last-child){
+                                    margin-right: 20px;
+                                }
+                                &#soc1{background: url(./img/facebook.png) no-repeat center/cover};
+                                &#soc2{background: url(./img/twitter.png) no-repeat center/cover};
+                                &#soc3{background: url(./img/in.png) no-repeat center/cover}
+                            }
+                        }
+                    }
+                }
+            }
+            &__subtitle{
+                @include adaptive-value('margin-bottom', 47, 23, 1);
+                @include adaptive-value('margin-top', 16, 12, 1);
+            }
+            &__title{}
+        }
+    }
+    
+}
