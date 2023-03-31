@@ -1,4 +1,5 @@
 $maxWidth: 1920;
+$maxMidleWidth: 1440;
 $maxWidthContainer: 1117;
 
 @mixin adaptive-value($prop, $startSize, $minSize, $type){
@@ -10,15 +11,21 @@ $maxWidthContainer: 1117;
             #{$prop}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));   
         }
     } @else if $type==2{
-        // Тільки якщо більше контейнера
+        // Тільки якщо більше контейнера 1117px
         #{$prop}: $startSize + px;
-        @media (min-width: #{$maxWidthContainer + px}) {
+        @media (max-width: #{$maxWidthContainer + px}) {
             #{$prop}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));   
         }
     } @else if $type==3{
-        // Тільки якщо більше контейнера
+        // Тільки якщо більше контейнера 1920px
         #{$prop}: $startSize + px;
-        @media (min-width: #{$maxWidth + px}) {
+        @media (max-width: #{$maxWidth + px}) {
+            #{$prop}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));   
+        }
+    } @else if $type==4{
+        // Тільки якщо більше контейнера 1920px
+        #{$prop}: $startSize + px;
+        @media (max-width: #{$maxMidleWidth + px}) {
             #{$prop}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));   
         }
     } @else {

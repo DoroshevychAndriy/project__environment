@@ -1,0 +1,44 @@
+.whatwedo__comp{
+    & .container__padd{
+        @include adaptive-value('margin-top', 96, 20, 4); 
+        @include adaptive-value('margin-bottom', 96, 60, 4); 
+        & .main__content{
+            margin-left: 0;
+            @media screen and (max-width: 972px){
+                text-align: center;
+            }
+            & .main__title{
+                &-text{
+                    margin-top: 32px;
+                    @include text-title;
+                    @include adaptive-value('margin-left', 96, 0, 4); 
+                    @include adaptive-value('width', 624, 280, 4);
+                    @include adaptive-value('margin-bottom', 34, 23, 4);
+                    @media screen and (max-width: 972px){
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
+            & .main__subtitle-text{
+                @include text-p;
+                @include adaptive-value('width', 596, 280, 4);
+                @include adaptive-value('margin-left', 96, 0, 4); 
+                @media screen and (max-width: 972px){
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+        & .main__subtitle{
+            background: url(../img/whatwedoimg.png) no-repeat center/cover;
+            @include adaptive-value('width', 480, 299, 4);
+            @include adaptive-value('height', 384, 266, 4);
+            border-radius: 12px;
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+    }
+}
+

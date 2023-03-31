@@ -7,7 +7,6 @@
     @include adaptive-value('margin-right', 65, 0, 0);
 }
 .component{
-    &__about{}
     &__whatwedo{
         margin-bottom: 0;
     }

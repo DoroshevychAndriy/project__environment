@@ -6,6 +6,8 @@ import Error from '../Error/Error';
 import Footer from '../Footer/Footer';
 import Head from '../Head';
 import Header from '../header/Header';
+import Media from '../Media/Media';
+import WhatWeDoComp from '../WhatWeDo__comp/WhatWeDoComp';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route exact path="project__environment" element={<Head />} />
         <Route path="/about" element={<AboutUsComp />} />
+        <Route path="/whatwedo" element={<WhatWeDoComp />} />
+        <Route path="/media" element={<Media />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

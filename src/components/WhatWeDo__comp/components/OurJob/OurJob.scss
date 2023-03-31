@@ -1,0 +1,75 @@
+.component__ourjob {
+    @include adaptive-value('padding-left', 110, 10, 1);
+    @include adaptive-value('padding-right', 110, 10, 1);
+    @include adaptive-value('padding-top', 96, 60, 1);
+    @include adaptive-value('padding-bottom', 48, 20, 1);
+    background: #EFF7F2;
+}
+
+.whatwedo__comp{
+    & .section__content.component__project {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        & h2{
+            text-align: center;
+        }
+    }
+    & .component__about.component__project.padd{
+        & hr{
+            display: none;
+        }
+        & .part__text{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.component{
+    &__ourjob{
+        background: #EFF7F2;
+        .ourjob{
+            &__content{
+                &-title{
+                    @include middle-title;
+                    @include adaptive-value('font-size', 48, 25, 1);
+                    @include adaptive-value('margin-bottom', 64, 30, 1);
+                }
+            }
+        }
+        .whatwedo{
+            &__content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @media screen and (max-width: 1300px){
+                    justify-content: center;
+                }
+                @media screen and (max-width: 768px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .whatwedo__item{
+                    margin-bottom: 48px;
+                }
+                .item{
+                    
+                    &__icon img{
+                        margin-top: 0;
+                    }
+                    &__subtitle{
+                        @include adaptive-value('width', 332, 270, 1);
+                        @media screen and (max-width: 768px){
+                            @include adaptive-value('width', 900, 270, 1);
+                        }
+                    }
+                    &__text{}
+                    &__title{
+                    }
+                }
+            }
+            &__item{}
+        }
+    }
+}

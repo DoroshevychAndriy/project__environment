@@ -9,8 +9,8 @@
     margin-bottom: 96px;
     @include adaptive-value('padding-top', 128, 100, 1);
     @include adaptive-value('padding-bottom', 128, 80, 1);
-    @include adaptive-value('padding-left', 63, 10, 1);
-    @include adaptive-value('padding-right', 63, 10, 1);
+    @include adaptive-value('padding-left', 96, 10, 1);
+    @include adaptive-value('padding-right', 96, 10, 1);
     & .main__block{
             display: flex;
             flex-direction: column;

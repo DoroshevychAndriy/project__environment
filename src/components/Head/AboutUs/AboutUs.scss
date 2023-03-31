@@ -20,8 +20,8 @@
     }
 }
 .padd {
-    @include adaptive-value('padding-left', 110, 20, 1);
-    @include adaptive-value('padding-right', 110, 20, 1);
+    @include adaptive-value('padding-left', 110, 10, 1);
+    @include adaptive-value('padding-right', 110, 10, 1);
 }
 .part{
     display: flex;

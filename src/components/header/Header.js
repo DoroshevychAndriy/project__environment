@@ -34,10 +34,10 @@ export class Header extends Component {
                                 <NavLink to="/about" setActive className='menu__link'>About us</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/project__environment/whatwedo" setActive className='menu__link'>What We Do</NavLink>
+                                <NavLink to="/whatwedo" setActive className='menu__link'>What We Do</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/project__environment/media" setActive className='menu__link'>Media</NavLink>
+                                <NavLink to="/media" id='active' setActive className='menu__link'>Media</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/project__environment/contact" setActive className='menu__link'>Contact</NavLink>
