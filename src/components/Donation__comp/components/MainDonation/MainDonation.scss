@@ -1,0 +1,64 @@
+
+.component__main__donation{
+        .main__donation__img{
+        background: url('../img/Img1.png') no-repeat center/cover;
+        @include adaptive-value('width', 480, 296, 4);
+        @include adaptive-value('height', 384, 260, 4);
+        @media screen and (max-width: 972px){
+            @include adaptive-value('margin-left', 96, 10, 4);
+            @include adaptive-value('margin-right', 96, 10, 4);
+            @include adaptive-value('margin-top', 40, 20, 4);
+            width: 95%;
+        }
+    }
+
+    .main {
+        &__content {
+            margin-left: 0;
+            background: #EFF7F2;
+            @include adaptive-value('padding-left', 110, 10, 4);
+            @include adaptive-value('padding-top', 96, 40, 4);
+            @include adaptive-value('padding-bottom', 96, 40, 4);
+            @include adaptive-value('padding-right', 110, 10, 4);
+            @media screen and (max-width: 972px){
+                flex-direction: column;
+            }
+        }
+        &__title {
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+        &__title-text {
+            @include adaptive-value('padding-left', 96, 5, 4);
+            @include adaptive-value('margin-top', 32, 20, 4);
+            @include adaptive-value('margin-bottom', 14, 10, 4);
+            @include text-title;
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+        &__subtitle-text {
+            @include adaptive-value('padding-left', 96, 5, 4);
+            @include text-p;
+            @media screen and (max-width: 972px){
+                width: 100%;
+            }
+        }
+        &__donation__btn.btn{
+            background: #70C174;
+            border-radius: 4px;
+            width: 149px;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            @include adaptive-value('margin-left', 96, 5, 1);
+            @include adaptive-value('margin-top', 34, 20, 1);
+            @include adaptive-value('width', 149, 111, 1);
+            @include adaptive-value('height', 51, 35, 1);
+        }
+    }
+}
+

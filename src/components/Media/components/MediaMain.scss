@@ -9,8 +9,12 @@
     background: #EFF7F2;
 }
 .media-main.whatwedo__comp{
-    background: #EFF7F2;
+    
+    & .component__news{
+        @include adaptive-value('margin-top', 96, 50, 4);
+    }
     & .container__padd{
+        background: #EFF7F2;
         & .main__content{
             @media screen and (max-width: 1370px){
                 flex-direction: column;

@@ -1,7 +1,7 @@
 .component{
     &__news{
-        @include adaptive-value('margin-right', 110, 20, 1);
-        @include adaptive-value('margin-left', 110, 20, 1);
+        @include adaptive-value('margin-right', 110, 10, 1);
+        @include adaptive-value('margin-left', 110, 10, 1);
         @include adaptive-value('margin-bottom', 96, 62, 1);
     }
 }
@@ -74,12 +74,11 @@
         }
         &__text{
             font-weight: 500;
-            font-size: 40px;
             line-height: 140%;
             color: #1D2130;
             margin-right: 5px;
-            width: 30%;
             @include adaptive-value('font-size', 40, 16, 1);
+            @include adaptive-value('width', 350, 150, 1);
         }
     }
 }
