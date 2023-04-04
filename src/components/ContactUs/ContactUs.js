@@ -5,6 +5,7 @@ import Maps from './Components/ContactMaps/Maps';
 
 export class ContactUs extends Component {
     componentDidMount(){
+        window.scrollTo(0, 0)
         let link = document.querySelectorAll('.menu ul li a');
         let inActive = document.querySelector('.menu ul li a#activeCont');
         let header = document.querySelector('.component__header');

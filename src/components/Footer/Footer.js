@@ -13,18 +13,18 @@ export class Footer extends Component {
                         <div className="footer__nav__block">
                         <div className="footer__navbar">
                             <ul>
-                                <li><Link to="#" className='active'>Our team</Link></li>
+                                <li><Link to="/about" className='active'>Our team</Link></li>
                                 <li><Link to="/about" className='footer__navbar__item'>About us</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Team</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>What we do</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Contact</Link></li>
+                                <li><Link to="/about" className='footer__navbar__item'>Team</Link></li>
+                                <li><Link to="/whatwedo" className='footer__navbar__item'>What we do</Link></li>
+                                <li><Link to="/contactus" className='footer__navbar__item'>Contact</Link></li>
                             </ul>
                             <ul>
-                                <li><Link to="#" className='active'>More</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Projects</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Events</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Donate</Link></li>
-                                <li><Link to="#" className='footer__navbar__item'>Blog</Link></li>
+                                <li><Link to="/about" className='active'>More</Link></li>
+                                <li><Link to="/projects" className='footer__navbar__item'>Projects</Link></li>
+                                <li><Link to="/events" className='footer__navbar__item'>Events</Link></li>
+                                <li><Link to="/donation" className='footer__navbar__item'>Donate</Link></li>
+                                <li><Link to="/blog_post" className='footer__navbar__item'>Blog</Link></li>
                             </ul>
                             <ul>
                                 <li><Link to="#" className='active'>Connect </Link></li>

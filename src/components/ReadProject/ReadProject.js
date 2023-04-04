@@ -9,6 +9,7 @@ export class ReadProject extends Component {
   componentDidMount(){
     let header = document.querySelector('.component__header');
     header.classList.remove('header__active')
+    window.scrollTo(0, 0)
   }
   
   render() {

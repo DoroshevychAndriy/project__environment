@@ -7,7 +7,13 @@ import Project from './Projects/Project'
 import Report from './Report/Report'
 import WhatWeDo from './WhatWeDo/WhatWeDo'
 
+
 export class Head extends Component {
+  componentDidMount(){
+    let header = document.querySelector('.component__header');
+    header.classList.remove('header__active')
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <div>
