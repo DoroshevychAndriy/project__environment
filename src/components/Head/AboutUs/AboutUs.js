@@ -8,6 +8,7 @@ import img3 from '../../../img/icon/Logo3.png';
 import img4 from '../../../img/icon/Logo4.png';
 import img5 from '../../../img/icon/Logo5.png';
 import img6 from '../../../img/icon/Logo6.png';
+import { Link } from 'react-router-dom';
 
 
 export class AboutUs extends Component {
@@ -24,7 +25,7 @@ export class AboutUs extends Component {
                     <h2>We help nature smile and survive everywhere</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     <p className='section__text'>  ‍Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                    <button className='section__btn btn'>Learn more</button>
+                    <Link to='/blog_post' className='section__btn btn'>Learn more</Link>
                 </div>
             </section>
             <div className="about__img"></div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export class MediaMain extends Component {
-
     componentDidMount(){
         let link = document.querySelectorAll('.menu ul li a');
         let inActive = document.querySelector('.menu ul li a#active');
@@ -32,7 +32,7 @@ export class MediaMain extends Component {
                             </div>
                             <div className="main__title-text">Our goal is to make water available for everyone</div>
                             <div className="main__subtitle-text">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
-                            <button className="media__main__btn btn">Read more</button>
+                            <Link to='/projects' className="media__main__btn btn">Read more</Link>
                         </div>
                         <div className="media-main__items">
                             <div className='media-main__item media__item'>

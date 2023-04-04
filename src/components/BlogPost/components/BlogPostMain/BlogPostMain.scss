@@ -1,0 +1,33 @@
+.component__blog-post{
+    .blog-post{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include adaptive-value('margin-left', 110, 5, 4);
+        @include adaptive-value('margin-right', 110, 5, 4);
+        @include adaptive-value('margin-top', 96, 50, 4);
+        @include adaptive-value('margin-bottom', 96, 50, 4);
+        &__abovetitle{
+            @include text-p;
+            font-weight: 500;
+            color: #1D2130;
+        }
+        &__title{
+            @include text-title;
+            margin-bottom: 16px;
+            @include adaptive-value('width', 1024, 305, 4);
+            @include adaptive-value('margin-top', 32, 10, 4);
+        }
+        &__subtitle{
+            @include text-p;
+        }
+        &__img{
+            background: url(../img/Image.png) no-repeat center/cover;
+            width: 100%;
+            border-radius: 12px;
+            @include adaptive-value('height', 384, 326, 4);
+            @include adaptive-value('margin-top', 48, 28, 4);
+        }
+    }
+}

@@ -58,6 +58,9 @@
             @include adaptive-value('margin-top', 34, 20, 1);
             @include adaptive-value('width', 149, 111, 1);
             @include adaptive-value('height', 51, 35, 1);
+            &:hover{
+                background: #BEF3C0;
+             }
         }
     }
 }

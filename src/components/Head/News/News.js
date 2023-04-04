@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class News extends Component {
   render() {
@@ -47,8 +48,7 @@ export class News extends Component {
               </div>
               <div className="event__title__content">
                 <div className="event__title-text">Say no to plastic usage and save the planet</div>
-                <a href='#' className='event__title-arrow'>
-                </a>
+                <Link to='/events' className='event__title-arrow'></Link>
               </div>
             </div>
           </div>
@@ -64,8 +64,7 @@ export class News extends Component {
               </div>
               <div className="event__title__content">
                 <div className="event__title-text">Weekly cleaning program</div>
-                <a href='#' className='event__title-arrow'>
-                </a>
+                <Link to='/events' className='event__title-arrow'></Link>
               </div>
             </div>
           </div>

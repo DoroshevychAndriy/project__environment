@@ -1,0 +1,90 @@
+.component__event-read{
+    .news__content{
+        display: none;
+    }
+    .news__title:first-child{
+        display: none;
+    }
+    .news__events{
+        flex-direction: column;
+        align-items: center;
+        .event:not(:last-child){
+            margin-bottom: 32px;
+        }
+        .event{
+            width: 100%;
+        }
+    }
+    .component__news{
+        @include adaptive-value('padding-right', 354, 10, 4);
+        @include adaptive-value('padding-left', 354, 10, 4);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .event-read__main{
+        @include adaptive-value('padding-right', 110, 5, 4);
+        @include adaptive-value('padding-left', 110, 5, 4);
+        @include adaptive-value('padding-top', 96, 50, 4);
+        @include adaptive-value('padding-bottom', 96, 50, 4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #EFF7F2;
+        @media screen and (max-width: 678px){
+            align-items: center;
+            text-align: center;
+        }
+        .event-read__title{
+            @include text-title;
+            @include adaptive-value('width', 677, 300, 4);
+            margin-bottom: 48px;
+        }
+        .event-read__data{
+            font-weight: 500;
+            display: flex;
+            @media screen and (max-width: 678px){
+                flex-direction: column;
+                margin-left: 30px;
+            }
+            .data__loc{
+                position: relative;
+                @include adaptive-value('margin-right', 60, 30, 4);
+                a{
+                    font-weight: 500;
+                    line-height: 160%;
+                    color: #1D2130;
+                    @include adaptive-value('font-size', 16, 14, 4);
+                }
+                &::before{
+                    position: absolute;
+                    content: url(../img/location.png);
+                    width: 19.64px;
+                    height: 24px;
+                    top: 0;
+                    left: -30px;
+                }
+                @media screen and (max-width: 678px){
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                }
+            }
+            .data__number{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: url(../img/number.png);
+                    width: 21.6px;
+                    height: 24px;
+                    top: 0;
+                    left: -30px;
+                }
+                a{
+                    font-weight: 500;
+                    line-height: 160%;
+                    color: #1D2130;
+                    @include adaptive-value('font-size', 16, 14, 4);
+                }
+            }
+        }
+    }
+}

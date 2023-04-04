@@ -1,0 +1,12 @@
+@import './components/ReadProjectMain/ReadProjectMain.scss';
+@import './components/Features/Features.scss';
+
+
+.component__readprojects{
+    .component__about.component__project.padd{
+        .part, .section__content.component__project{
+            display: none;
+        }
+    }
+    
+}
